@@ -17,3 +17,10 @@ Em vários estabelecimentos são encontradas filas de espera, em que as pessoas 
 - Alcançar a maior eficiência dos espaços que os clientes visitam;
 -	Melhorar a experiência dos clientes em filas de espera dos estabelecimentos;
 -	Aumentar a rotatividade do estabelecimento.
+
+## Integrantes
+
+- Caroline Maria Nunes Bol
+- Isabela Sobral Porpino Paes Barreto
+- Lucas da Silva Freitas
+- Luiz Ricardo Bragança da Silva
