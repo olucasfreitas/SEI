@@ -1,0 +1,74 @@
+.cadastro-container{
+    width: 100%;
+    
+    height: 100vh;
+    margin: 0 auto;
+
+    padding: 96px;
+    background-color: #643853;
+    
+    
+
+    
+
+}
+
+.cadastro-container h1{
+    color: #FFF;
+    display: flex;
+}
+
+
+.cadastro-container .content{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cadastro-container .content .centraliza p{
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.cadastro-container .content .espaco .centraliza .linha p{
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.cadastro-container .content .centraliza input{
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container .content .alinhar{
+    width: 100%;
+    max-width: 600px;
+}
+
+.cadastro-container .content .centraliza textarea{
+    height: 140px;
+    margin-bottom: 40px;
+}
+
+
+.cadastro-container .content .linha{
+    display: flex;   
+}
+
+.cadastro-container .content .espaco .centraliza textarea{
+    margin-top: 8px;
+}
+
+.cadastro-container .content .linha .centraliza textarea{
+    width: 91%;
+    height: 10px;
+    margin-top: 8px;
+
+}
+
+.cadastro-container button{
+    margin-top: 40px;
+}
