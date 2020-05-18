@@ -9,14 +9,13 @@ module.exports = {
     },
 
     async create(request, response) {
-        const { name, description, password, address, email, number, waiting_time } = request.body;
+        const { name, password, address, email, number, waiting_time } = request.body;
 
         const id = crypto.randomBytes(4).toString('HEX');
 
         await connection('estabelecimentos').insert({
             id,
             name,
-            description,
             password,
             address,
             email,
