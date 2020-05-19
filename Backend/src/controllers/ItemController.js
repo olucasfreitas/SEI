@@ -1,4 +1,17 @@
 const connection = require('../database/connection');
+const multer =  require('multer');
+
+var storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, '../uploads')
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+});
+
+const uploads = multer({ dest: '../uploads'})
+
 
 module.exports = {
 
