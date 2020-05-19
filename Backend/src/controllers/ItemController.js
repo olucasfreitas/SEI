@@ -1,8 +1,15 @@
 const connection = require('../database/connection');
 
 module.exports = {
+
     async index(request, response) {
-        const itens = await connection('itens').select('*');
+        const {page = 1} = request.query;
+
+        
+        const itens = await connection('itens')
+            .limits(5)
+            .offset((page - 1))
+            .select('*');
 
         return response.json(itens);
     },
