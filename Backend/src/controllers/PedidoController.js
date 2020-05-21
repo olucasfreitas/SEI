@@ -17,9 +17,7 @@ module.exports = {
   async create(request, response) {
     const { name, quantity, price, orders, user_id } = request.body;
 
-    const id = crypto.randomBytes(3).toString("HEX").toUpperCase();
-
-    await connection("user").insert({
+    await connection("orders").insert({
       id,
       name,
       quantity_items,
@@ -27,8 +25,10 @@ module.exports = {
     });
 
     return response.json({ id, password });
+
   },
 
+  
   async delete(request, response) {
     const { id } = request.params;
     const estabelecimento_id = request.headers.authorization;
