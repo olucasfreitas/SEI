@@ -1,0 +1,18 @@
+.fila-container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #643853;
+    color: #FFF;
+}
+
+.fila-container heather{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+}
+
+.fila-container heather h1{
+    font-size: 35px;
+    margin-left: 450px;
+}   
