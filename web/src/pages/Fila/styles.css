@@ -16,3 +16,34 @@
     font-size: 35px;
     margin-left: 450px;
 }   
+
+.fila-container .pessoas{
+    width: 50%;
+    padding: 60px;
+    color: #643853;
+}
+
+.fila-container .pessoas .linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fila-container .pessoas .linha p{
+    font-size: 16px;
+}
+
+.fila-container .pessoas .alinha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fila-container .pessoas .alinha button{
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    background-color: #643853;
+    color: #FFF;
+}
+

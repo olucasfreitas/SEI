@@ -24,3 +24,37 @@
     line-height: 40px;
     margin-top: 0px;
 }
+
+.itens-container .itens{
+    width: 50%;
+    padding: 60px;
+    color: #643853;
+}
+
+.itens-container .itens .linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itens-container .itens .linha p{
+    font-size: 16px;
+}
+
+.itens-container .itens .alinha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.itens-container .itens .alinha button{
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    background-color: #643853;
+    color: #FFF;
+}
+
+.itens-container .itens .descricao p{
+    font-size: 16px;
+}
