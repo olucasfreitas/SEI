@@ -4,8 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Seja bem vinda ao melhor app </Text>
-      <Text style={styles.text}>de filas já visto nesse planeta!</Text>
+      <Text>Calma Mãe, respira</Text>
     </View>
   );
 }
@@ -13,12 +12,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'purple',
+    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
-    fontSize: 25,
-    color: '#fff'
-  }
 });
