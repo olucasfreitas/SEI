@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "sei",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,12 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "knex": "^0.21.1",
     "sqlite3": "^4.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
   }
 }

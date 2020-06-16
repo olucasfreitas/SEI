@@ -2,10 +2,12 @@ const connection = require("../database/connection");
 module.exports = {
     async index(request, response) {
         const { page = 1 } = request.query;
+        const estabelecimento_id = request.headers.authorization;
 
         const itens = await connection("itens")
+            .where('estabelecimento_id', estabelecimento_id)
             .limit(5)
-            .offset(page - 1)
+            .offset((page - 1) * 5)
             .select("*");
 
         return response.json(itens);

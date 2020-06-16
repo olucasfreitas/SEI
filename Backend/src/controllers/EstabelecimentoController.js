@@ -27,6 +27,6 @@ module.exports = {
             number,
         });
 
-        return response.json({ id, password });
+        return response.json({ id });
     }
 }
