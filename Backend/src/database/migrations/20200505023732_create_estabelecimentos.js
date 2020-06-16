@@ -6,7 +6,6 @@ exports.up = function (knex) {
         table.string('address').notNullable();
         table.string('email').notNullable();
         table.string('number').notNullable();
-        table.decimal('waiting_time', 2).notNullable();
         //photo
     });
 };

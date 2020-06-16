@@ -10,12 +10,12 @@ const routes = express.Router();
 
 routes.post('/sessions', SessionController.create);
 
-routes.get('/estabelecimentos', EstabelecimentoController.index);
-routes.post('/estabelecimentos', EstabelecimentoController.create);
+routes.get('/estabelecimentos/list', EstabelecimentoController.index);
+routes.post('/estabelecimentos/create', EstabelecimentoController.create);
 
-routes.get('/itens', ItemController.index);
-routes.post('/itens', ItemController.create);
-routes.delete('/itens/:id', ItemController.delete);
+routes.get('/itens/list', ItemController.index);
+routes.post('/itens/create', ItemController.create);
+routes.delete('/itens/delete/:id', ItemController.delete);
 
 routes.get('/user/list', UserController.index);
 routes.post('/user/create', UserController.create);

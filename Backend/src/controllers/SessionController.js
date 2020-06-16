@@ -1,4 +1,4 @@
-const connection = require('../database/connection');
+const connection = require("../database/connection");
 
 module.exports = {
     async create(request, response) {
@@ -15,13 +15,13 @@ module.exports = {
             .first();
 
         if (!estabelecimento) {
-            return response.status(400).json({ error: 'Nenhum estabelecimento encontrado.' });
+            return response.status(400).json({ error: 'E-mail incorreto!' });
         }
 
         if (!senha) {
-            return response.status(400).json({ error: 'Senha incorreta. Tente novamente.' });
+            return response.status(400).json({ error: 'Senha incorreta!' });
         }
 
         return response.json(estabelecimento);
     }
-}
+};

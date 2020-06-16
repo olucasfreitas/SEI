@@ -7,7 +7,7 @@ module.exports = {
 
     const pedidos = await connection("pedidos")
       .where("user_id", user_id)
-      .limits(5)
+      .limit(5)
       .offset(page - 1)
       .select("*");
 
@@ -15,34 +15,35 @@ module.exports = {
   },
 
   async create(request, response) {
-    const { name, quantity, price, orders, user_id } = request.body;
+    const { quantity } = request.body;
+    const user_id = request.headers.authorization;
 
-    await connection("orders").insert({
-      id,
+    const [id] = await connection("pedidos").insert({
+      user_id,
       name,
-      quantity_items,
-      preco_total,
+      quantity,
+      price,
     });
 
-    return response.json({ id, password });
+    return response.json({ user_id });
 
+    // Incompleto - Name e price
   },
 
-  
   async delete(request, response) {
     const { id } = request.params;
-    const estabelecimento_id = request.headers.authorization;
+    const user_id = request.headers.authorization;
 
-    const user = await connection("user")
+    const user = await connection("pedidos")
       .where("id", id)
-      .select("estabelecimento_id")
+      .select("user_id")
       .first();
 
-    if (user.estabelecimento_id !== estabelecimento_id) {
+    if (user.id !== user_id) {
       return response.status(401).json({ error: "Item Não Deletado." });
     }
 
-    await connection("user").where("id", id).delete();
+    await connection("pedidos").where("id", id).delete();
 
     return response.status(204).send();
   },
