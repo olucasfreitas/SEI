@@ -1,0 +1,67 @@
+.cadastro-container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #643853;
+
+}
+
+.cadastro-container .janela{
+    width: 100%;
+    padding: 16px;
+    
+}
+
+.cadastro-container h1{
+    color: #FFF;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cadastro-container .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-container .grupo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-container .lados{
+    width: 100%;
+    min-width: 500px;
+}
+
+.cadastro-container .content .linha{
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-container .content .lugar{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.cadastro-container .content p{
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.cadastro-container .content input{
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+
+.cadastro-container button{
+    max-width: 380px;
+    margin-top: 30px;
+}
