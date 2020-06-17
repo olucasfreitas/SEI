@@ -47,9 +47,8 @@ module.exports = {
     }
 
     await connection("user").where("id", id).delete();
+    await connection("pedidos").where("user_id", id).delete();
 
     return response.status(204).send();
-
-    // incompleto - Delete todas as compras do usuário
   },
 };
