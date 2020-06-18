@@ -20,7 +20,7 @@ Em vários estabelecimentos são encontradas filas de espera, em que as pessoas 
 
 ## Integrantes
 
-- Caroline Maria Nunes Bol
-- Isabela Sobral Porpino Paes Barreto
-- Lucas da Silva Freitas
-- Luiz Ricardo Bragança da Silva
+- Caroline Maria Nunes Bol - carolinemariabol@gmail.com
+- Isabela Sobral Porpino Paes Barreto - isa.porpino@gmail.com
+- Lucas da Silva Freitas - lucasdasilvafreitas090@gmail.com
+- Luiz Ricardo Bragança da Silva - lurbraganca@hotmail.com
