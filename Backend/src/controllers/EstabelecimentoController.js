@@ -14,7 +14,7 @@ module.exports = {
     },
 
     async create(request, response) {
-        const { name, password, address, email, number } = request.body;
+        const { name, password, adress, email, number, description } = request.body;
 
         const id = crypto.randomBytes(4).toString('HEX');
 
@@ -22,9 +22,10 @@ module.exports = {
             id,
             name,
             password,
-            address,
+            adress,
             email,
             number,
+            description,
         });
 
         return response.json({ id });

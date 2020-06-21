@@ -3,9 +3,10 @@ exports.up = function (knex) {
       table.string('id').primary();
       table.string('name').notNullable();
       table.string('password').notNullable();
-      table.string('address').notNullable();
+      table.string('adress').notNullable();
       table.string('email').notNullable();
       table.string('number').notNullable();
+      table.string('description').notNullable();
       //photo
   });
 };

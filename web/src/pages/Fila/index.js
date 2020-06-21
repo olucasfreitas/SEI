@@ -30,6 +30,7 @@ export default function Fila(){
                                 <h5>Cliente: D59A63E1</h5>
                             </section>
                             <section className="alinha">
+                                <button className="button">Chamar cliente</button>
                                 <button className="button">Confirmar entrada</button>
                                 <button className="button">Remover da fila</button>
                             </section>

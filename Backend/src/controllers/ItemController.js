@@ -14,7 +14,7 @@ module.exports = {
     },
 
     async create(request, response) {
-        const { title, description, value, category } = request.body;
+        const { title, description, value } = request.body;
         const estabelecimento_id = request.headers.authorization;
 
         const [id] = await connection("itens").insert({
@@ -22,7 +22,6 @@ module.exports = {
             description,
             value,
             estabelecimento_id,
-            category,
         });
 
         return response.json({ id });

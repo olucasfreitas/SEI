@@ -1,12 +1,20 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import {FiPower} from 'react-icons/fi'
 import './styles.css';
 
 export default function Menu(){
+    const estabelecimento_name = localStorage.getItem('name');
+    const history = useHistory();
+
+    function handleLogout(e){
+        e.preventDefault();
+
+        history.push('/');
+    }
     return(
         <div className="menu-container">
-            <span>Bem vindo(a), Armazém Belém</span>
+            <span>Bem vindo ao, {estabelecimento_name}</span>
             <div className="centro">
                 <h1>Menu</h1>
                 <div>
@@ -17,7 +25,7 @@ export default function Menu(){
                     </section>
                 </div>
                <section className="direita">
-                    <button  id="sair" type="button">
+                    <button  id="sair" type="submit" onChange={handleLogout}>
                         <FiPower size={18} color="#FFF"/>
                     </button>
                </section>
