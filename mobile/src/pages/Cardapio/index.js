@@ -51,7 +51,7 @@ export default function Cardapio(){
                 </View>
                 <View style={styles.centro}>
                     <Image source={img} style={styles.imagem}/>
-                    <Text style={styles.contador}>Pessoas na sua frente: 9</Text>
+                    <Text style={styles.contador}>Tralala na sua frente: 9</Text>
                 </View>
             </View>
             <View style={styles.codigo}>
