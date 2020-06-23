@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import {AntDesign, MaterialIcons} from '@expo/vector-icons';
-import { View, Text, FlatList, Image, Button, TouchableOpacity } from 'react-native';
+import {AntDesign, Feather} from '@expo/vector-icons';
+import { View, Text, FlatList, Image, TouchableOpacity, Alert } from 'react-native';
 
 import styles from './styles';
 import imag from '../../assets/batata.jpg';
@@ -18,15 +18,37 @@ export default function Cardapio(){
     function navigateToItem(){
         navigation.navigate('Item');
     }
+    function navigateToCarrinho(){
+        navigation.navigate('Carrinho');
+    }
+
+    function twoOptionAlertHandler(){
+        Alert.alert(
+          'Sair da Fila',
+          'Você deseja realmente sair da fila? Sua posição será perdida',
+          [
+            {text: 'Sim', onPress: navigateToMenu},
+            {text: 'Não', onPress: () => {}},
+          ],
+          { cancelable: false }
+        );
+      }
 
     return(
         <View style={styles.container}>
             <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={navigateToMenu}
-                >
-                    <AntDesign name="arrowleft" size={26} style={styles.voltar}/>
-                </TouchableOpacity>
+                <View style={styles.linha}>
+                    <TouchableOpacity
+                        onPress={twoOptionAlertHandler}
+                    >
+                        <Feather name="log-out" size={26} style={styles.voltar}/>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={navigateToCarrinho}
+                    >
+                        <AntDesign name="shoppingcart" size={26} style={styles.voltar}/>
+                    </TouchableOpacity>
+                </View>
                 <View style={styles.centro}>
                     <Image source={img} style={styles.imagem}/>
                     <Text style={styles.contador}>Pessoas na sua frente: 9</Text>

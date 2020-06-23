@@ -10,6 +10,15 @@ export default StyleSheet.create({
         backgroundColor: '#FFF',
         height: 230,
         marginBottom: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
     },
 
     imagem: {
@@ -53,6 +62,16 @@ export default StyleSheet.create({
         backgroundColor: '#FFF',
         marginBottom: 16,
         alignItems: 'center',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
+
     },
 
     contador: {
@@ -66,6 +85,16 @@ export default StyleSheet.create({
         height: 40,
         width: 250,
         marginBottom: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
+        borderRadius: 4,
         
     },
 

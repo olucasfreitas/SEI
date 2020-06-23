@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import {AntDesign, MaterialIcons} from '@expo/vector-icons';
-import { View, Text, Image, Button, TouchableOpacity, TextInput } from 'react-native';
+import {NetworkInfo} from 'react-native-network-info';
+import { View, Text, Image, Button, TouchableOpacity, TextInput, Alert } from 'react-native';
 
 import styles from './styles';
 
@@ -17,6 +18,25 @@ export default function Restaurante(){
     function navigateToCardapio(){
         navigation.navigate('Cardapio');
     }
+
+    /*function validaConexao(){
+        Alert.alert(
+          'Conexão',
+          'A conexão com a rede do restaurante foi bem sucedida, prossiga para o cardápio',
+          [
+            {text: 'Prosseguir', onPress: navigateToCardapio},
+          ],
+          { cancelable: false }
+        );
+      }*/
+
+      function teste(){
+        
+        
+        NetworkInfo.getSSID().then(ssid => {
+            alert(ssid);
+          });
+      }
 
     return(
         <View style={styles.container}>
@@ -44,9 +64,9 @@ export default function Restaurante(){
                     <Text style={styles.contador}>9</Text>
                 </View>
                 <Text style={styles.titulo}>Preencha para entrar na fila</Text>
-                <TextInput style={styles.input} placeholder="Digite seu nome"/>
+                <TextInput style={styles.input} placeholder=" Digite seu nome"/>
                 <View style={styles.button}>
-                    <Button onPress={navigateToCardapio} color='#643853' title="Entrar"/>
+                    <Button onPress={teste} color='#643853' title="Entrar"/>
                 </View>
             </View>
         </View>

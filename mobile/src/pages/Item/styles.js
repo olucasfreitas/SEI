@@ -10,6 +10,15 @@ export default StyleSheet.create({
         paddingTop: Constants.statusBarHeight + 5,
         backgroundColor: '#FFF',
         height: 230,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
     },
 
     imagem: {
@@ -56,6 +65,16 @@ export default StyleSheet.create({
         height: 100,
         width: 300,
         marginBottom: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
+        borderRadius: 6,
     },
 
     caixa: {
@@ -66,5 +85,14 @@ export default StyleSheet.create({
         backgroundColor: '#FFF',
         marginBottom: 70,
         alignItems: 'center',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
     },
 });

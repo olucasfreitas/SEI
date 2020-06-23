@@ -31,15 +31,16 @@ export default function Restaurante(){
                     <Image source={img} style={styles.imagem}/>
                     <View style={styles.time}>
                         <AntDesign name="clockcircle" size = {16}/>
-                        <Text style={styles.restaurante}>  Tempo de Espera: 45 a 60 min</Text>
+                        <Text>  Tempo de Espera: 45 a 60 min</Text>
                     </View>
                     <View style={styles.time}>
                         <MaterialIcons name="location-on" size={16}/>
-                        <Text style={styles.restaurante}> Av. Senador Lemos 794</Text>
+                        <Text style={styles.end}> Av. Senador Lemos 794</Text>
                     </View>
                 </View>
+                <Button onPress={navigateToFila} color='#643853' style={styles.botao} title="Entrar na Fila" /> 
             </View>
-            <Button onPress={navigateToFila} color='#643853' title="Entrar na Fila" /> 
+            
             <FlatList 
                 data={[1, 2, 3]}
                 keyExtractor={restaurante => String(restaurante)}

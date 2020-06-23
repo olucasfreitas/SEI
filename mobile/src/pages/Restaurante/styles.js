@@ -8,7 +8,16 @@ export default StyleSheet.create({
 
     header: {
         backgroundColor: '#FFF',
-        height: 230,
+        height: 270,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.23,
+        shadowRadius: 2.62,
+
+        elevation: 4,
     },
 
     imagem: {
@@ -37,6 +46,15 @@ export default StyleSheet.create({
         marginBottom: 16,
         flexDirection: 'row',
         alignItems: 'center',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
     },
 
     textBody: {
@@ -50,5 +68,10 @@ export default StyleSheet.create({
         fontSize: 20,
         marginTop: 0,
         marginBottom: 10,
-    }
+    },
+
+    end: {
+        marginBottom: 22,
+    },
+
 });

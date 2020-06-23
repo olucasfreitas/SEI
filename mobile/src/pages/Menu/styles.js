@@ -22,12 +22,24 @@ export default StyleSheet.create({
     },
 
     menu: {
+        marginVertical:18,
+        marginHorizontal: 18,
         padding: 24,
+        maxWidth: 300,
         borderRadius: 8,
         backgroundColor: '#FFF',
-        marginBottom: 16,
         flexDirection: 'row',
         alignItems: 'center',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.30,
+        shadowRadius: 4.65,
+
+        elevation: 8,
+        borderRadius: 8,
     },
 
     textBody: {

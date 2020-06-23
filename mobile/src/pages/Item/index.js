@@ -35,7 +35,7 @@ export default function Item(){
                 </View>
                 <Text style={styles.obs}>Deseja adicionar alguma observação?</Text>
                 <View style={styles.input}>
-                    <TextInput placeholder="Ex: sem cebola"/>
+                    <TextInput placeholder=" Ex: sem cebola"/>
                 </View>
                 <View style={styles.button}>
                     <Button onPress={() => {}} color='#643853' title="Adicionar"/>
