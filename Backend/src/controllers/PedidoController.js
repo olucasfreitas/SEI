@@ -8,7 +8,7 @@ module.exports = {
     const pedidos = await connection("pedidos")
       .where("user_id", user_id)
       .limit(5)
-      .offset(page - 1)
+      .offset((page - 1) * 5)
       .select("*");
 
     return response.json(pedidos);

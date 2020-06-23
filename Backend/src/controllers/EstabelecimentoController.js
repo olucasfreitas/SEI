@@ -7,7 +7,7 @@ module.exports = {
 
         const estabelecimentos = await connection('estabelecimentos')
             .limit(5)
-            .offset((page - 1))
+            .offset((page - 1) * 5)
             .select('*');
 
         return response.json(estabelecimentos);
