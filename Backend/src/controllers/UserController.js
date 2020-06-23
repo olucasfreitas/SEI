@@ -1,5 +1,5 @@
 const connection = require("../database/connection");
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 module.exports = {
   async index(request, response) {
@@ -10,7 +10,7 @@ module.exports = {
       .where("estabelecimento_id", estabelecimento_id)
       .limit(5)
       .offset((page - 1) * 5)
-      .select('*');
+      .select("*");
 
     return response.json(user);
   },
@@ -20,6 +20,7 @@ module.exports = {
     const { name } = request.body;
     const quantity_items = 0;
     const preco_total = 0;
+    const entry = 0;
     const id = crypto.randomBytes(3).toString("HEX").toUpperCase();
 
     await connection("user").insert({
@@ -27,10 +28,11 @@ module.exports = {
       name,
       quantity_items,
       preco_total,
-      estabelecimento_id
+      estabelecimento_id,
+      entry,
     });
 
-    return response.json({ id });
+    return response.json({ id, entry });
   },
 
   async delete(request, response) {
@@ -38,17 +40,25 @@ module.exports = {
     const estabelecimento_id = request.headers.authorization;
 
     const user = await connection("user")
-      .where('id', id)
-      .select('estabelecimento_id')
+      .where("id", id)
+      .select("estabelecimento_id")
       .first();
 
     if (user.estabelecimento_id !== estabelecimento_id) {
-      return response.status(401).json({ error: 'Operação não permitida. ' });
+      return response.status(401).json({ error: "Operação não permitida." });
     }
 
     await connection("user").where("id", id).delete();
     await connection("pedidos").where("user_id", id).delete();
 
     return response.status(204).send();
+  },
+
+  async puEntry(request, response) {
+    const { id } = request.params;
+
+    const user = await connection("user").where("id", id).update("entry", "1");
+
+    return response.json(user);
   },
 };

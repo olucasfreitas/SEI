@@ -5,6 +5,7 @@ exports.up = function (knex) {
       table.integer('quantity_items').notNullable();
       table.integer('preco_total').notNullable();
       table.string('estabelecimento_id').notNullable();
+      table.integer('entry').defaultTo(0);
       table.foreign('estabelecimento_id').references('id').inTable('estabelecimentos');
   });
 };

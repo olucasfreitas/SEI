@@ -19,6 +19,7 @@ routes.delete('/itens/delete/:id', ItemController.delete);
 
 routes.get('/user/list', UserController.index);
 routes.post('/user/create', UserController.create);
+routes.put('/user/entry/:id', UserController.puEntry);
 routes.delete('/user/delete/:id', UserController.delete);
 
 routes.get('/pedidos/list', PedidoController.index);

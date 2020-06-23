@@ -1,5 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable('itens', function (table) {
+      table.string('item_id').notNullable();
       table.string('title').notNullable();
       table.string('description', 25).notNullable();
       table.decimal('value').notNullable();

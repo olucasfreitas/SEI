@@ -30,6 +30,7 @@ export default function Cad_Itens() {
 
       alert(`Seu item foi cadastrado no ${name}`);
       console.log(response.data.title);
+      console.log(response.data.item_id);
       history.push("itens");
     } catch (err) {
       alert(`Erro no cadastro, tente novamente.`);
