@@ -21,8 +21,8 @@ export default StyleSheet.create({
     },
 
     imagem: {
-        height: 100,
-        width: 100,
+        height: 80,
+        width: 80,
     },
 
     itens: {
@@ -39,6 +39,7 @@ export default StyleSheet.create({
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
 
+        borderRadius: 8,
         elevation: 8,
     },
     

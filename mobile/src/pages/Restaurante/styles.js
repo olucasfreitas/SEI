@@ -12,17 +12,22 @@ export default StyleSheet.create({
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
-            height: 2,
+            height: 9,
         },
-        shadowOpacity: 0.23,
-        shadowRadius: 2.62,
+        shadowOpacity: 0.48,
+        shadowRadius: 11.95,
 
-        elevation: 4,
+        elevation: 18,
+    },
+
+    img: {
+        height: 100,
+        width: 100,
     },
 
     imagem: {
-        height: 100,
-        width: 100,
+        height: 80,
+        width: 80,
     },
 
     voltar: {
@@ -54,6 +59,7 @@ export default StyleSheet.create({
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
 
+        borderRadius: 8,
         elevation: 8,
     },
 
@@ -67,11 +73,21 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
         marginTop: 0,
-        marginBottom: 10,
+        marginBottom: 20,
     },
 
     end: {
         marginBottom: 22,
     },
 
+    nome: {
+        marginTop: 20,
+        marginLeft: 20,
+        fontSize: 25,
+        color: '#B0B0B0',
+    },  
+
+    preco: {
+        color: '#B22222'
+    },
 });

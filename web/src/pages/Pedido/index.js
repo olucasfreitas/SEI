@@ -49,6 +49,7 @@ export default function Pedido() {
         </Link>
 
         <h1>Pedidos para Preparo</h1>
+        <div></div>
       </heather>
 
       <div className="pedidos">

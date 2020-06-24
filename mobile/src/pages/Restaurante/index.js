@@ -59,7 +59,7 @@ export default function Restaurante() {
                     <AntDesign name="arrowleft" size={26} style={styles.voltar} />
                 </TouchableOpacity>
                 <View style={styles.centro}>
-                    <Image source={img} style={styles.imagem} />
+                    <Image source={img} style={styles.img} />
                     <View style={styles.time}>
                         <AntDesign name="clockcircle" size={16} />
                         <Text>  Tempo de Espera: 45 a 60 min</Text>
@@ -72,6 +72,8 @@ export default function Restaurante() {
                 <Button onPress={() => navigateToFila(o_restaurante)} color='#643853' style={styles.botao} title="Entrar na Fila" />
             </View>
 
+            <Text style={styles.nome}>Cardápio</Text>
+
             <FlatList
                 data={item}
                 keyExtractor={restaurante => String(restaurante.item_id)}
@@ -81,7 +83,7 @@ export default function Restaurante() {
                         <Image source={imag} style={styles.imagem} />
                         <View style={styles.textBody}>
                             <Text style={[styles.titulo, { marginTop: 0 }]}>{item.title}</Text>
-                            <Text style={styles.preço}>
+                            <Text style={styles.preco}>
                                 {Intl.NumberFormat('pt-BR', {
                                     style: 'currency',
                                     currency: 'BRL'

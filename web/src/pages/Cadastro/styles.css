@@ -35,6 +35,17 @@
     min-width: 500px;
 }
 
+.cadastro-container .lados .email{
+    width: 100%;
+}
+
+.cadastro-container .lados .descri{
+    width: 100%;
+    min-width: 550px;
+    min-height: 167px;
+}
+
+
 .cadastro-container .content .linha{
     width: 89%;
     display: flex;

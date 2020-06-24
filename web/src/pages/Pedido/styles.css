@@ -1,6 +1,6 @@
 .pedido-container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     background-color: #643853;
     color: #FFF;
@@ -10,11 +10,11 @@
     display: flex;
     flex-direction: row;
     padding: 12px;
+    justify-content: space-between;
 }
 
 .pedido-container heather h1{
     font-size: 35px;
-    margin-left: 410px;
 }   
 
 .pedido-container .pedidos{

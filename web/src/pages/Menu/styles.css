@@ -17,6 +17,10 @@
     margin-bottom: 70px;
 }
 
+.menu-container span{
+    font-size: 20px;
+}
+
 .menu-container .botoes{
     width: 100%;
     display: flex;

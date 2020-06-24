@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { AntDesign, MaterialIcons } from '@expo/vector-icons';
-import { View, Text, Image, Button, TouchableOpacity, TextInput, Alert } from 'react-native';
+import { View, Text, Image, Button, TouchableOpacity, TextInput, Alert, KeyboardAvoidingView, ScrollView } from 'react-native';
 
 import api from '../../services/api';
 
@@ -57,36 +57,43 @@ export default function Restaurante() {
     }
 
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={navigateToRestaurante}
-                >
-                    <AntDesign name="arrowleft" size={26} style={styles.voltar} />
-                </TouchableOpacity>
+        <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : null}
+        keyboardVerticalOffset={Platform.OS === "ios" ? 64 : 0}>
+            <ScrollView>
+                <View style={styles.container}>
+                <View style={styles.header}>
+                    <TouchableOpacity
+                        onPress={navigateToRestaurante}
+                    >
+                        <AntDesign name="arrowleft" size={26} style={styles.voltar} />
+                    </TouchableOpacity>
+                    <View style={styles.centro}>
+                        <Image source={img} style={styles.imagem} />
+                        <View style={styles.time}>
+                            <AntDesign name="clockcircle" size={16} />
+                            <Text style={styles.restaurante}>  Tempo de Espera: 45 a 60 min</Text>
+                        </View>
+                        <View style={styles.time}>
+                            <MaterialIcons name="location-on" size={16} />
+                            <Text style={styles.restaurante}>{restaurante.adress}</Text>
+                        </View>
+                    </View>
+                </View>
                 <View style={styles.centro}>
-                    <Image source={img} style={styles.imagem} />
-                    <View style={styles.time}>
-                        <AntDesign name="clockcircle" size={16} />
-                        <Text style={styles.restaurante}>  Tempo de Espera: 45 a 60 min</Text>
+                    <Text style={styles.titulo}>Total de Pessoas na fila</Text>
+                    <View style={styles.fila}>
+                        <Text style={styles.contador}>1</Text>
                     </View>
-                    <View style={styles.time}>
-                        <MaterialIcons name="location-on" size={16} />
-                        <Text style={styles.restaurante}>{restaurante.adress}</Text>
+                    <Text style={styles.titulo}>Preencha para entrar na fila</Text>
+                    <TextInput value={name} onChangeText={value => setName(value)} style={styles.input} placeholder=" Digite seu nome" />
+                    <View style={styles.button}>
+                        <Button onPress={createUser} color='#643853' title="Entrar" />
                     </View>
                 </View>
             </View>
-            <View style={styles.centro}>
-                <Text style={styles.titulo}>Total de Pessoas na fila</Text>
-                <View style={styles.fila}>
-                    <Text style={styles.contador}>1</Text>
-                </View>
-                <Text style={styles.titulo}>Preencha para entrar na fila</Text>
-                <TextInput value={name} onChangeText={value => setName(value)} style={styles.input} placeholder=" Digite seu nome" />
-                <View style={styles.button}>
-                    <Button onPress={createUser} color='#643853' title="Entrar" />
-                </View>
-            </View>
-        </View>
+            </ScrollView>
+        </KeyboardAvoidingView>
+        
     );
 }

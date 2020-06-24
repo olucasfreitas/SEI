@@ -8,6 +8,7 @@ import api from '../../services/api';
 import styles from './styles';
 import imag from '../../assets/batata.jpg';
 
+
 import img from '../../assets/quintal.png';
 
 export default function Cardapio() {
@@ -82,13 +83,16 @@ export default function Cardapio() {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.centro}>
-                    <Image source={img} style={styles.imagem} />
+                    <Image source={img} style={styles.img} />
                     <Text style={styles.contador}>Pessoas na sua frente: 1</Text>
                 </View>
             </View>
             <View style={styles.codigo}>
                 <Text style={styles.cod}>Seu código é: {id}</Text>
             </View>
+            <Text style={styles.aviso}>Aqui você fará seu pré-pedido, que só começará</Text>
+            <Text style={styles.aviso}>a ser preparado quando você entrar no restaurante</Text>
+            <Text style={styles.nome}>Cardápio</Text>
             <FlatList
                 data={item}
                 keyExtractor={restaurante => String(restaurante.item_id)}
@@ -101,7 +105,7 @@ export default function Cardapio() {
                             <Image source={imag} style={styles.imagem} />
                             <View style={styles.textBody}>
                                 <Text style={[styles.titulo, { marginTop: 0 }]}>{item.title}</Text>
-                                <Text style={styles.preço}>
+                                <Text style={styles.preco}>
                                     {Intl.NumberFormat('pt-BR', {
                                         style: 'currency',
                                         currency: 'BRL'

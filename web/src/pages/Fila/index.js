@@ -62,7 +62,8 @@ export default function Fila() {
           <FiArrowLeft size={35} color="#FFF" />
         </Link>
 
-        <h1>Pessoas na Fila</h1>
+        <h1>Pessoas na Fila do Estabelecimento</h1>
+        <div></div>
       </heather>
 
       <div className="pessoas">

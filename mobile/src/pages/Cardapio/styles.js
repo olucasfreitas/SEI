@@ -16,13 +16,18 @@ export default StyleSheet.create({
         justifyContent: 'space-between'
     },
 
-    imagem: {
+    img: {
         height: 100,
         width: 100,
     },
 
+    imagem: {
+        height: 80,
+        width: 80,
+    },
+
     voltar: {
-        paddingTop: Constants.statusBarHeight + 5,
+        paddingTop: Constants.statusBarHeight + 10,
         paddingHorizontal: 10,
         color: '#643853'
     },
@@ -33,30 +38,32 @@ export default StyleSheet.create({
 
     contador: {
         color: '#643853',
-        marginTop: 40,
+        marginTop: 35,
         fontSize: 17,
         fontWeight: 'bold'
 
     },
 
     codigo: {
+        padding: 4,
         backgroundColor: '#643853',
         alignItems: 'center',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
-            height: 2,
+            height: 9,
         },
-        shadowOpacity: 0.23,
-        shadowRadius: 2.62,
+        shadowOpacity: 0.48,
+        shadowRadius: 11.95,
 
-        elevation: 4,
+        elevation: 18,
+        marginBottom: 20,
     },
 
     cod: {
         color: '#FFF',
         fontWeight: 'bold',
-        fontSize: 25,
+        fontSize: 30,
     },
 
     itens: {
@@ -73,6 +80,7 @@ export default StyleSheet.create({
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
 
+        borderRadius: 8,
         elevation: 8,
     },
 
@@ -87,5 +95,22 @@ export default StyleSheet.create({
         fontSize: 20,
         marginTop: 0,
         marginBottom: 10,
-    }
+    },
+
+    aviso: {
+        color: '#B0B0B0',
+        fontSize: 14, 
+        textAlign: 'center',
+    },
+
+    nome: {
+        marginTop: 10,
+        marginLeft: 20,
+        fontSize: 25,
+        color: '#B0B0B0',
+    },  
+    
+    preco: {
+        color: '#B22222'
+    },
 });

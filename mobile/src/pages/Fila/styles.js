@@ -13,12 +13,12 @@ export default StyleSheet.create({
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
-            height: 4,
+            height: 8,
         },
-        shadowOpacity: 0.30,
-        shadowRadius: 4.65,
+        shadowOpacity: 0.44,
+        shadowRadius: 10.32,
 
-        elevation: 8,
+        elevation: 16,
     },
 
     imagem: {
@@ -48,15 +48,15 @@ export default StyleSheet.create({
     titulo: {
         color: '#643853',
         fontWeight: 'bold',
-        fontSize: 25,
+        fontSize: 27,
         marginTop: 10,
         marginBottom: 20,
     },
 
     fila: {
-        width: 250,
-        padding: 18,
-        borderRadius: 8,
+        width: 270,
+        padding: 10,
+        borderRadius: 12,
 
 
         backgroundColor: '#FFF',
@@ -77,13 +77,13 @@ export default StyleSheet.create({
     contador: {
         color: '#643853',
         fontWeight: 'bold',
-        fontSize: 55,
+        fontSize: 85,
     },
 
     input: {
         backgroundColor: '#FFF',
-        height: 40,
-        width: 250,
+        height: 50,
+        width: 270,
         marginBottom: 10,
         shadowColor: "#000",
         shadowOffset: {
@@ -94,12 +94,12 @@ export default StyleSheet.create({
         shadowRadius: 4.65,
 
         elevation: 8,
-        borderRadius: 4,
+        borderRadius: 12,
         
     },
 
     button: {
-        width: 300,
-        marginTop: 20,
+        width: 320,
+        marginTop: 50,
     },
 });

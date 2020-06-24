@@ -87,45 +87,44 @@ export default function Cadastro() {
                   onChange={e => setAdress(e.target.value)}
                 />
               </section>
-
               <section>
-                <p>E-mail</p>
+                <p>Número de Telefone</p>
                 <input
-                  type="email"
-                  placeholder="E-mail"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  placeholder="(XX) XXXXX-XXXX"
+                  value={number}
+                  onChange={e => setNumber(e.target.value)}
                 />
               </section>
             </section>
 
             <section className="lados">
               <section>
+                <p>E-mail</p>
+                <input
+                  className="email"
+                  type="email"
+                  placeholder="E-mail"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                />
+              </section>
+
+              <section>
                 <p>Confirmação de E-mail</p>
-                <input type="email" placeholder="E-mail" className="input" />
+                <input  
+                className="email" type="email" placeholder="E-mail" />
               </section>
 
               <section>
                 <p>Descrição</p>
                 <textarea
+                  className="descri"
                   placeholder="Descrição"
                   value={description}
                   onChange={e => setDescription(e.target.value)}
                 />
               </section>
 
-              <div className="bloco">
-                <section className="lugar">
-                  <section>
-                    <p>Número de Telefone</p>
-                    <input
-                      placeholder="(XX) XXXXX-XXXX"
-                      value={number}
-                      onChange={e => setNumber(e.target.value)}
-                    />
-                  </section>
-                </section>
-              </div>
             </section>
           </div>
           <button className="button" type="submit">

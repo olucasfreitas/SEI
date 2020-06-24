@@ -74,12 +74,12 @@ export default StyleSheet.create({
         shadowRadius: 4.65,
 
         elevation: 8,
-        borderRadius: 6,
+        borderRadius: 12,
     },
 
     caixa: {
         width: 300,
-        borderRadius: 8,
+        borderRadius: 12,
         marginTop: 40,
         padding: 10,
         backgroundColor: '#FFF',
