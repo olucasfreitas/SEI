@@ -24,3 +24,5 @@ Em vários estabelecimentos são encontradas filas de espera, em que as pessoas 
 - Isabela Sobral Porpino Paes Barreto - isa.porpino@gmail.com
 - Lucas da Silva Freitas - lucasdasilvafreitas090@gmail.com
 - Luiz Ricardo Bragança da Silva - lurbraganca@hotmail.com
+
+https://github.com/olucasfreitas/SEI
