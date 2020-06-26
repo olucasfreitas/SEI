@@ -42,7 +42,6 @@ export default function Cadastro() {
 
   return (
     <div className="cadastro-container">
-      <div className="janela">
         <Link className="back-link" to="/">
           <FiArrowLeft size={25} color="#FFF" />
         </Link>
@@ -131,7 +130,6 @@ export default function Cadastro() {
             Cadastrar
           </button>
         </form>
-      </div>
     </div>
   );
 }

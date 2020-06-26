@@ -24,11 +24,12 @@ export default StyleSheet.create({
     imagem: {
         flex: 1,
         resizeMode: "cover",
-        justifyContent: "center"
+        justifyContent: "center",
+        
     },
 
     voltar: {
-        marginBottom: 110,
+        marginBottom: 85,
         paddingLeft: 10,
         color: '#FFF'
     },
@@ -39,14 +40,23 @@ export default StyleSheet.create({
 
     titulo: {
         color: '#FFF',
-        marginTop: 10,
         fontSize: 40,
         fontWeight: 'bold'
+    },
+
+    valor: {
+        color: '#FFF',
+        fontSize: 20,
+        marginBottom: 5,
     },
 
     descricao: {
         color: '#643853',
         fontSize: 20,
+        paddingHorizontal: 30,
+        marginTop: 40,
+        marginBottom: 60,
+        textAlign: 'center',
     },
 
     obs: {
@@ -62,8 +72,9 @@ export default StyleSheet.create({
 
     input: {
         backgroundColor: '#FFF',
-        height: 100,
+        height: 150,
         width: 300,
+        padding: 7,
         marginBottom: 10,
         shadowColor: "#000",
         shadowOffset: {
@@ -77,22 +88,5 @@ export default StyleSheet.create({
         borderRadius: 12,
     },
 
-    caixa: {
-        width: 300,
-        borderRadius: 12,
-        marginTop: 40,
-        padding: 10,
-        backgroundColor: '#FFF',
-        marginBottom: 70,
-        alignItems: 'center',
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 4,
-        },
-        shadowOpacity: 0.30,
-        shadowRadius: 4.65,
-
-        elevation: 8,
-    },
+    
 });

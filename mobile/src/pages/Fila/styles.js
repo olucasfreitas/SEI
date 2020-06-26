@@ -8,7 +8,7 @@ export default StyleSheet.create({
 
     header: {
         backgroundColor: '#FFF',
-        height: 230,
+        height: 270,
         marginBottom: 20,
         shadowColor: "#000",
         shadowOffset: {
@@ -95,11 +95,18 @@ export default StyleSheet.create({
 
         elevation: 8,
         borderRadius: 12,
-        
+        padding: 7,
     },
 
     button: {
-        width: 320,
-        marginTop: 50,
+        width: 270,
+        marginTop: 15,
+    },
+
+    nome: {
+        color: '#643853',
+        fontSize: 25,
+        fontWeight: 'bold',
+        marginTop: 10
     },
 });

@@ -8,7 +8,7 @@ export default StyleSheet.create({
 
     header: {
         backgroundColor: '#FFF',
-        height: 230,
+        height: 240,
     },
 
     linha: {
@@ -37,11 +37,9 @@ export default StyleSheet.create({
     },
 
     contador: {
-        color: '#643853',
-        marginTop: 35,
         fontSize: 17,
-        fontWeight: 'bold'
-
+        marginBottom: 5,
+        color: '#643853'
     },
 
     codigo: {
@@ -67,9 +65,9 @@ export default StyleSheet.create({
     },
 
     itens: {
-        margin: 20,
+        marginHorizontal: 20,
+        marginVertical: 15,
         backgroundColor: '#FFF',
-        marginBottom: 16,
         flexDirection: 'row',
         alignItems: 'center',
         shadowColor: "#000",
@@ -85,8 +83,9 @@ export default StyleSheet.create({
     },
 
     textBody: {
-        alignItems: 'center',
-        paddingHorizontal: 40,
+        padding: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
 
     titulo: {
@@ -111,6 +110,16 @@ export default StyleSheet.create({
     },  
     
     preco: {
+        fontSize: 20,
+        marginLeft: 20,
         color: '#B22222'
     },
+
+    restaurante: {
+        color: '#643853',
+        fontSize: 25,
+        fontWeight: 'bold',
+        marginTop: 10
+    },
+
 });

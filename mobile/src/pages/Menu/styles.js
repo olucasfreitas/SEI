@@ -44,7 +44,7 @@ export default StyleSheet.create({
 
     textBody: {
         alignItems: 'center',
-        paddingHorizontal: 40,
+        paddingHorizontal: 20,
     },
 
     time: {

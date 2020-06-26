@@ -42,13 +42,13 @@ export default StyleSheet.create({
 
     time: {
         flexDirection: 'row',
-        marginTop: 10,
+        marginTop: 5,
     },
 
     itens: {
-        margin: 20,
+        marginHorizontal: 20,
+        marginVertical: 15,
         backgroundColor: '#FFF',
-        marginBottom: 16,
         flexDirection: 'row',
         alignItems: 'center',
         shadowColor: "#000",
@@ -64,8 +64,9 @@ export default StyleSheet.create({
     },
 
     textBody: {
-        alignItems: 'center',
-        paddingHorizontal: 40,
+        padding: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
 
     titulo: {
@@ -73,7 +74,7 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
         marginTop: 0,
-        marginBottom: 20,
+        marginBottom: 10,
     },
 
     end: {
@@ -81,13 +82,22 @@ export default StyleSheet.create({
     },
 
     nome: {
-        marginTop: 20,
+        marginTop: 50,
         marginLeft: 20,
         fontSize: 25,
         color: '#B0B0B0',
     },  
 
     preco: {
+        fontSize: 20,
+        marginLeft: 20,
         color: '#B22222'
+    },
+
+    restaurante: {
+        color: '#643853',
+        fontSize: 25,
+        fontWeight: 'bold',
+        marginTop: 10
     },
 });

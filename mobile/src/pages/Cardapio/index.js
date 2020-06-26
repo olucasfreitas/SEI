@@ -84,6 +84,7 @@ export default function Cardapio() {
                 </View>
                 <View style={styles.centro}>
                     <Image source={img} style={styles.img} />
+                    <Text style={styles.restaurante}>Quintal da Martini</Text>
                     <Text style={styles.contador}>Pessoas na sua frente: 1</Text>
                 </View>
             </View>
@@ -100,18 +101,17 @@ export default function Cardapio() {
                 renderItem={({ item: item }) => (
                     <TouchableOpacity
                         onPress={() => navigateToItem(item, id)}
+                        style={styles.itens}
                     >
-                        <View style={styles.itens}>
-                            <Image source={imag} style={styles.imagem} />
-                            <View style={styles.textBody}>
-                                <Text style={[styles.titulo, { marginTop: 0 }]}>{item.title}</Text>
-                                <Text style={styles.preco}>
-                                    {Intl.NumberFormat('pt-BR', {
-                                        style: 'currency',
-                                        currency: 'BRL'
-                                    }).format(item.value)}
-                                </Text>
-                            </View>
+                        <Image source={imag} style={styles.imagem} />
+                        <View style={styles.textBody}>
+                            <Text style={[styles.titulo, { marginTop: 0 }]}>{item.title}</Text>
+                            <Text style={styles.preco}>
+                                {Intl.NumberFormat('pt-BR', {
+                                    style: 'currency',
+                                    currency: 'BRL'
+                                }).format(item.value)}
+                            </Text>
                         </View>
                     </TouchableOpacity>
                 )}

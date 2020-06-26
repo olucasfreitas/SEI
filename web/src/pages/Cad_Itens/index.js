@@ -74,7 +74,7 @@ export default function Cad_Itens() {
                 <p>Valor</p>
                 <input
                   type="number"
-                  placeholder="Descobrir como fazer input de imagem"
+                  placeholder="Ex: 10,00"
                   value={value}
                   onChange={e => setValue(e.target.value)}
                 />

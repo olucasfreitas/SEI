@@ -70,6 +70,7 @@ export default function Restaurante() {
                     </TouchableOpacity>
                     <View style={styles.centro}>
                         <Image source={img} style={styles.imagem} />
+                        <Text style={styles.nome}>Quintal da Martini</Text>
                         <View style={styles.time}>
                             <AntDesign name="clockcircle" size={16} />
                             <Text style={styles.restaurante}>  Tempo de Espera: 45 a 60 min</Text>
