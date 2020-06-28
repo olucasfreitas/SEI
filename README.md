@@ -20,7 +20,7 @@ Em vários estabelecimentos são encontradas filas de espera, em que as pessoas 
 
 ## Interface
 
-- Tela de cadastrio do restaurante e Tela de Login;
+- Tela de cadastro do restaurante e Tela de Login;
 
 ![](cadastr-login-restaurante.gif)
 
