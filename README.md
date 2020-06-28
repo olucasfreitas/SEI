@@ -10,21 +10,28 @@ A ideia do projeto é fazer um aplicativo que faça esse serviço só que de for
 
 Em vários estabelecimentos são encontradas filas de espera, em que as pessoas podem esperar desde alguns minutos até algumas horas como em lugares com alta demanda. Essa situação sempre gera dois sentimentos nos proprietários: satisfação pelo seu empreendimento ser procurado pelos clientes, e o medo de que estejam insatisfeitos com a possível demora no atendimento. Se não é possível acabar com esse problema, ao menos é preciso saber contorná-lo. Por isso, é essencial planejar o atendimento de modo a evitar filas longas e esperas e, manter a satisfação e fidelidade do cliente que já conhecem e frequentam o seu estabelecimento, e principalmente automatizar o gerenciamento de espera com a tecnologia, tornando a experiência do cliente muito melhor.
 
-## Interface
-
 ## Objetivo
-
-![](cadastr-login-restaurante.gif)
-
-![](interface-cliente.gif)
-
-![](confirmação-de-entrada.gif)
 
 ### Objetivo Geral:
 
 - Alcançar a maior eficiência dos espaços que os clientes visitam;
 -	Melhorar a experiência dos clientes em filas de espera dos estabelecimentos;
 -	Aumentar a rotatividade do estabelecimento.
+
+## Interface
+
+- Tela de cadastrio do restaurante e Tela de Login;
+
+![](cadastr-login-restaurante.gif)
+
+- Interface mobile
+
+![](interface-cliente.gif)
+
+- Confirmação da entrada do cliente e Temporizador
+
+![](confirmação-de-entrada.gif)
+
 
 ## Integrantes
 
